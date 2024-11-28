@@ -5,60 +5,10 @@
     <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "description" content = "Seja bem-vindo ao The Winners, uma comunidade com foco em Brawl Stars. Fazemos vídeos, sorteios, eventos e muito mais!">
+    <link rel="stylesheet" href="style.css">
     <title>Sorteios - The Winner's</title>
 
     <style>
-    
-        
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        body {
-            width: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url(fundo.png);
-            background-repeat: no-repeat;
-            background-position: right top;
-            background-attachment: fixed;
-            background-size: cover;
-
-        }
-
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: static;
-            margin: auto;
-            background-color: rgb(255, 255, 255);
-            padding: 5px;
-            border-bottom: 1px solid black;
-        }
-
-        #creators {
-            width: 40px;
-            margin-left: 10px;
-        }
-
-
-
-        .container {
-            min-width: 350px;
-            max-width: 600px;
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-            margin-top: 20px;
-            margin: auto;
-            padding: 20px;
-            box-shadow: 0px 15px 10px 10px black;
-            border-top: 1px solid black;
-        }
-
         #titulo-sorteio {
             font-size: 35px;
             font-family: 'Poppins';
@@ -148,6 +98,7 @@
         }
 
         #container-1 {
+            border-top: 1px solid black;
             background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 187, 227));
         }
 
@@ -170,389 +121,295 @@
             width: 100px;
             margin: 0;
         }
-
-
-        footer {
-            background-color: rgb(0, 0, 0);
-            bottom: 0;
-            margin-left: 0;
-            width: 100%;
-            height: 150px;
-        }
-
-        #container-final1 {
-            text-align: center;
-            color: white;
-            margin-left: 10px;
-        }
-
-        #container-final {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            min-width: 390px;
-            max-width: 640px;
-            margin: auto;
-        }
-
-        #titulo-final {
-            font-size: 15px;
-            padding: 10px;
-        }
-
-        .link {
-            width: 40px;
-            margin: auto;
-            padding: 5px;
-        }
-
-        #container-contatos {
-            min-width: 390px;
-            max-width: 640px;
-            text-align: center;
-            margin: auto;
-            color: white;
-        }
-
-        #titulo-contatos {
-            font-size: 15px;
-        }
-
-        #container-contatos p {
-            font-size: 12px;
-        }
-
-        #horarios {
-            color: white;
-            margin-right: 10px;
-        }
-
-        #horarios h1 {
-            font-size: 15px;
-        }
-
-        #horarios p {
-            font-size: 12px;
-        }
-
-        #menu-h ul {
-            list-style: none;
-            background-image: linear-gradient(rgb(255, 255, 255), rgb(231, 250, 255));
-            padding: 0;
-            min-width: 390px;
-            max-width: 640px;
-            margin: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        #menu-h ul li {
-            display: inline
-        }
-
-        #menu-h ul li a {
-            font-family: 'Poppins';
-            display: inline-block;
-            color: #2b2b2b;
-            text-decoration: none;
-            padding: 20px;
-            transition: color .3s;
-            font-weight: 600;
-        }
-
-        #menu-h ul li a:hover {
-            color: #aaaaaa;
-        }
-
     </style>
 
 </head>
 <body>
-    
-    <header>
-        <img src="banner.jpg" alt="">
-        <img src="https://creators.supercell.com/img/creators-logo-badge.322e15ce.svg" alt="" id="creators">
-    </header>
+    <main>
+        <header>
+            <img src="banner.jpg" alt="">
+            <img src="https://creators.supercell.com/img/creators-logo-badge.322e15ce.svg" alt="" class="creators">
+        </header>
 
-    <nav id="menu-h">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sorteios.html" style="border-bottom: 2px solid black;">Sorteios</a></li>
-            <li><a href="itensGratis.html">Grátis</a></li>
-            <li><a href="redesSociais.html">Redes</a></li>
-        </ul>
-    </nav>
+        <nav class="menu-h">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sorteios.html" style="border-bottom: 2px solid black;">Sorteios</a></li>
+                <li><a href="itensGratis.html">Grátis</a></li>
+                <li><a href="redesSociais.html">Redes</a></li>
+            </ul>
+        </nav>
 
-    <div class="container" id="container-1">
-        <h1 id="titulo-sorteio">TODOS OS NOSSOS SORTEIOS</h1>
-        <p id="descricao-sorteio">
-            Aqui você verá todos os <strong>sorteios</strong> que já realizamos em nossas <strong>redes sociais.</strong>
-        </p>
-        <div id="container-sorteios">
+        <div class="container" id="container-1">
+            <h1 id="titulo-sorteio">TODOS OS NOSSOS SORTEIOS</h1>
+            <p id="descricao-sorteio">
+                Aqui você verá todos os <strong>sorteios</strong> que já realizamos em nossas <strong>redes sociais.</strong>
+            </p>
+            <div id="container-sorteios">
 
-            <h1 class="titulo-sorteio2">-- Max Angelical --</h1>
+                <h1 class="titulo-sorteio2">-- Max Angelical --</h1>
 
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Max Angelical</h1>
-                        <p>Plataforma: Vídeo Youtube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: Kaique87</p>
-                        <p>Início: 27/10/2024</p>
-                        <p>Término: 06/11/2024</p>
-                    </span>
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Max Angelical</h1>
+                            <p>Plataforma: Vídeo Youtube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: Kaique87</p>
+                            <p>Início: 27/10/2024</p>
+                            <p>Término: 06/11/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/maxAngelical.png" alt="">
+                        <span class="seta"></span>
+                    </div>
                 </div>
-                <div>
-                    <img src="imagensSorteios/maxAngelical.png" alt="">
-                    <span class="seta"></span>
+
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Max Angelical</h1>
+                            <p>Plataforma: Live YouTube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: Caneta Azul</p>
+                            <p>Data: 16/11/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/maxAngelical.png" alt="">
+                        <span class="seta"></span>
+                    </div>
                 </div>
+
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Max Angelical</h1>
+                            <p>Plataforma: Sorteio Discord</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: Brawler Ninjago</p>
+                            <p>Início: 27/10/2024</p>
+                            <p>termino: 06/11/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/maxAngelical.png" alt="">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <h1 class="titulo-sorteio2">-- Zumbibi --</h1>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Zumbibi</h1>
+                            <p>Plataforma: Vídeo YouTube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: Auxiliadora</p>
+                            <p>Início: 06/10/2024</p>
+                            <p>termino: 19/10/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/Zumbibi.png" alt="" id="zumbibi">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Zumbibi</h1>
+                            <p>Plataforma: Sorteio Discord</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Data: 28/10/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/Zumbibi.png" alt="" id="zumbibi">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Zumbibi</h1>
+                            <p>Plataforma: Sorteio Discord</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Data: 31/10/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/Zumbibi.png" alt="" id="zumbibi">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <h1 class="titulo-sorteio2">-- Hank Guardião --</h1>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Hank Guardião</h1>
+                            <p>Plataforma: Vídeo YouTube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: 1tz_ripxgt</p>
+                            <p>Início: 01/09/2024</p>
+                            <p>termino: 11/9/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/hankGuardiao.png" alt="" id="hankGuardiao">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Hank Guardião</h1>
+                            <p>Plataforma: Live YouTube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: Stéfano</p>
+                            <p>Data: 14/09/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/hankGuardiao.png" alt="" id="hankGuardiao">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Hank Guardião</h1>
+                            <p>Plataforma: Sorteio Discord</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: Thiago4ever</p>
+                            <p>Início: 09/09/2024</p>
+                            <p>termino: 11/9/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/hankGuardiao.png" alt="" id="hankGuardiao">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+
+
+
+                <h1 class="titulo-sorteio2">-- Jessie Tropical --</h1>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Jessie Tropical</h1>
+                            <p>Plataforma: Vídeo YouTube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: M.I.G.U.E.LO</p>
+                            <p>Início: 04/08/2024</p>
+                            <p>termino: 14/08/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/jessieTropical.png" alt="" id="jessieTropical">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Jessie Tropical</h1>
+                            <p>Plataforma: Live YouTube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: Lah</p>
+                            <p>Data: 24/08/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/jessieTropical.png" alt="" id="jessieTropical">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Jessie Tropical</h1>
+                            <p>Plataforma: Video YouTube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Link econdido no vídeo</p>
+                            <p>Data: 06/08/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/jessieTropical.png" alt="" id="jessieTropical">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
+                <h1 class="titulo-sorteio2">-- Bull Rei Bárbaro --</h1>
+
+                <div class="container-sorteio-box" onclick="leiaMais()">
+                    <div>
+                        <span class="fechado">
+                            <h1>Bull Rei Bárbaro</h1>
+                            <p>Plataforma: Vídeo YouTube</p>
+                            <p>Status: Encerrado</p>
+                        </span>
+                        <span class="aberto">
+                            <p>Vencedor: Kauan Pires</p>
+                            <p>Início: 26/05/2024</p>
+                            <p>termino: 01/06/2024</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="imagensSorteios/bullRei.png" alt="" id="bullRei">
+                        <span class="seta"></span>
+                    </div>
+                </div>
+
             </div>
-
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Max Angelical</h1>
-                        <p>Plataforma: Live YouTube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: Caneta Azul</p>
-                        <p>Data: 16/11/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/maxAngelical.png" alt="">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Max Angelical</h1>
-                        <p>Plataforma: Sorteio Discord</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: Brawler Ninjago</p>
-                        <p>Início: 27/10/2024</p>
-                        <p>termino: 06/11/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/maxAngelical.png" alt="">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <h1 class="titulo-sorteio2">-- Zumbibi --</h1>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Zumbibi</h1>
-                        <p>Plataforma: Vídeo YouTube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: Auxiliadora</p>
-                        <p>Início: 06/10/2024</p>
-                        <p>termino: 19/10/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/Zumbibi.png" alt="" id="zumbibi">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Zumbibi</h1>
-                        <p>Plataforma: Sorteio Discord</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Data: 28/10/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/Zumbibi.png" alt="" id="zumbibi">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Zumbibi</h1>
-                        <p>Plataforma: Sorteio Discord</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Data: 31/10/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/Zumbibi.png" alt="" id="zumbibi">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <h1 class="titulo-sorteio2">-- Hank Guardião --</h1>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Hank Guardião</h1>
-                        <p>Plataforma: Vídeo YouTube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: 1tz_ripxgt</p>
-                        <p>Início: 01/09/2024</p>
-                        <p>termino: 11/9/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/hankGuardiao.png" alt="" id="hankGuardiao">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Hank Guardião</h1>
-                        <p>Plataforma: Live YouTube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: Stéfano</p>
-                        <p>Data: 14/09/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/hankGuardiao.png" alt="" id="hankGuardiao">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Hank Guardião</h1>
-                        <p>Plataforma: Sorteio Discord</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: Thiago4ever</p>
-                        <p>Início: 09/09/2024</p>
-                        <p>termino: 11/9/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/hankGuardiao.png" alt="" id="hankGuardiao">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-
-
-
-            <h1 class="titulo-sorteio2">-- Jessie Tropical --</h1>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Jessie Tropical</h1>
-                        <p>Plataforma: Vídeo YouTube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: M.I.G.U.E.LO</p>
-                        <p>Início: 04/08/2024</p>
-                        <p>termino: 14/08/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/jessieTropical.png" alt="" id="jessieTropical">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Jessie Tropical</h1>
-                        <p>Plataforma: Live YouTube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: Lah</p>
-                        <p>Data: 24/08/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/jessieTropical.png" alt="" id="jessieTropical">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Jessie Tropical</h1>
-                        <p>Plataforma: Video YouTube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Link econdido no vídeo</p>
-                        <p>Data: 06/08/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/jessieTropical.png" alt="" id="jessieTropical">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
-            <h1 class="titulo-sorteio2">-- Bull Rei Bárbaro --</h1>
-
-            <div class="container-sorteio-box" onclick="leiaMais()">
-                <div>
-                    <span class="fechado">
-                        <h1>Bull Rei Bárbaro</h1>
-                        <p>Plataforma: Vídeo YouTube</p>
-                        <p>Status: Encerrado</p>
-                    </span>
-                    <span class="aberto">
-                        <p>Vencedor: Kauan Pires</p>
-                        <p>Início: 26/05/2024</p>
-                        <p>termino: 01/06/2024</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="imagensSorteios/bullRei.png" alt="" id="bullRei">
-                    <span class="seta"></span>
-                </div>
-            </div>
-
         </div>
-    </div>
+    </main>
 
     <footer>
-        <div id="container-final">
-            <div id="container-final1">
-                <h1 id="titulo-final">Nossas redes sociais</h1>
-                <div id="redes-sociais">
+        <div class="container-final">
+            <div class="container-final1">
+                <h1 class="titulo-final">Nossas redes sociais</h1>
+                <div class="redes-sociais">
                     <a href="https://www.instagram.com/thewinners_23/"><img src="imagensRedesSociais/redeInstagram.png" alt="" class="link"></a>
                     <a href="https://www.youtube.com/@the_winners23" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="" class="link"></a>
                     <a href="https://discord.gg/K28fDYbXun" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="" class="link"></a>
@@ -560,7 +417,7 @@
                 </div>
             </div>
             
-            <div id="horarios">
+            <div class="horarios">
                 <h1>Horários:</h1>
                 <p>Shorts - Todo dia</p>
                 <p>Lives - Ocasionalmente</p>
@@ -568,10 +425,10 @@
             </div>
         </div>
 
-        <div id="container-contatos">
-            <h1 id="titulo-contatos">Contatos:</h1>
-            <p>The Winner's: brawl.stars.pf.tc@gmail.com</p>
-            <p>Desenvolvedor do site: pedrofelipecruz1@gmail.com</p>
+        <div class="container-regras">
+            <a href="contato.html">CONTATO</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="politicaPrivacidade.html">POLÍTICA DE PRIVACIDADE</a> 
         </div>
 
     </footer>
