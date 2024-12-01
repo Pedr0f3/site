@@ -19,8 +19,9 @@
             border-top: 1px solid black;
         }
 
-        .imagem {
+        #imagem {
             border: 1px solid black;
+            width: 100%;
         }
 
         #descricao-imagem {
@@ -162,20 +163,16 @@
         </nav>
 
 
-        <div class="container" id="conteudo">
-            
-            <p id="categoria">NOTÍCIAS</p>
-
-            <h1 id="titulo-conteudo">Shade ganhou vida: tudo sobre o novo brawler!</h1>
-            
-            <p id="descricao-titulo-conteudo">
-                Ele era uma pilha de roupas, mas virou um fantasma e decidiu quebrar o Brawl Stars 👕👻 Corra para garantir o acesso antecipado antes que ele tome nerf!
-            </p>
-
-
-            <img src="\imagensNoticias/lancamentoShade.jpg" alt="" id="imagem">
-            <p id="descricao-imagem">O novo Brawler da Estação Fantasma está aqui. Veja como desbloqueá-lo e suas habilidades únicas!</p>
-        
+        <section class="container" id="conteudo">
+            <article>
+                <p id="categoria">NOTÍCIAS</p>
+                <h1 id="titulo-conteudo">Shade ganhou vida: tudo sobre o novo brawler!</h1>
+                <p id="descricao-titulo-conteudo">
+                    Ele era uma pilha de roupas, mas virou um fantasma e decidiu quebrar o Brawl Stars 👕👻 Corra para garantir o acesso antecipado antes que ele tome nerf!
+                </p>
+                <img src="\imagensNoticias/lancamentoShade.jpg" alt="" id="imagem">
+                <p id="descricao-imagem">O novo Brawler da Estação Fantasma está aqui. Veja como desbloqueá-lo e suas habilidades únicas!</p>
+            </article>
 
 
             <div id="container-autor">
@@ -193,7 +190,7 @@
                 
 
 
-            <div id="container-materia">
+            <section id="container-materia">
                 <p class="">O Shade, segundo Brawler dessa atualização, enfim lançou! E, como já é de constume, está disponível na loja por dinheiro através de um acesso antecipado! Caso compre, você garantirá recompensas incríveis. Confira todos os detalhes e vantagens neste post!</p>
                 <h2 class="titulo-materia">🕵️ Quem é o Shade?</h2>
                 <p class="descricao-materia">O Shade é o mais novo Brawler épico do Brawl Stars. Ele é o parceiro de aventuras do Gus lá na Estação Fantasma, aonde ganhou vida a partir de roupas sujas! Ele possui habilidades únicas, como flutuar pelo mapa e atravessar paredes com o seu Super.</p>
@@ -215,36 +212,37 @@
                 <p class="descricao-materia">Isso tudo ao preço de <strong>R$84,90</strong>.</p>
                 <h2 class="titulo-materia">🪙 Quando o Shade Ficará Disponível por Vales</h2>
                 <p class="descricao-materia">A previsão da chegada do Shade ao jogo por <strong>vales</strong> está prevista para a próxima Quinta-Feira, dia 05/12. Data do lançamento da Nova Temporada do Brawl Stars, Star Toon 2.0.</p>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
 
     <footer>
-        <div class="container-final">
-            <div class="container-final1">
-                <h1 class="titulo-final">Nossas redes sociais</h1>
-                <div class="redes-sociais">
-                    <a href="https://www.instagram.com/thewinners_23/"><img src="\imagensRedesSociais/redeInstagram.png" alt="" class="link"></a>
-                    <a href="https://www.youtube.com/@the_winners23" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="" class="link"></a>
-                    <a href="https://discord.gg/K28fDYbXun" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="" class="link"></a>
-                    <a href="https://www.tiktok.com/@casal_winner?_t=8rhafQelrYV&_r=1"><img src="https://img.icons8.com/?size=512&id=118640&format=png" alt="" class="link"></a>
+        <section>
+            <article class="container-final">
+                <div class="container-final1">
+                    <h2 class="titulo-final">Nossas redes sociais</h2>
+                    <div class="redes-sociais">
+                        <a href="https://www.instagram.com/thewinners_23/"><img src="\imagensRedesSociais/redeInstagram.png" alt="instagram" class="link"></a>
+                        <a href="https://www.youtube.com/@the_winners23" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="youtube" class="link"></a>
+                        <a href="https://discord.gg/K28fDYbXun" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="discord" class="link"></a>
+                        <a href="https://www.tiktok.com/@casal_winner?_t=8rhafQelrYV&_r=1"><img src="https://img.icons8.com/?size=512&id=118640&format=png" alt="tiktok" class="link"></a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="horarios">
-                <h1>Horários:</h1>
-                <p>Shorts - Todo dia</p>
-                <p>Lives - Ocasionalmente</p>
-                <p>Vídeos - Todo domingo</p>
-            </div>
-        </div>
+                
+                <div class="horarios">
+                    <h2>Horários</h2>
+                    <p>Shorts - Todo dia</p>
+                    <p>Lives - Ocasionalmente</p>
+                    <p>Vídeos - Todo domingo</p>
+                </div>
+            </article>
 
-        <div class="container-regras">
-            <a href="/contato.html">CONTATO</a>
-            <a href="/sobre.html">SOBRE</a>
-            <a href="/politicaPrivacidade.html">POLÍTICA DE PRIVACIDADE</a> 
-        </div>
-
+            <article class="container-regras">
+                <a href="/contato.html">CONTATO</a>
+                <a href="/sobre.html">SOBRE</a>
+                <a href="/politicaPrivacidade.html">POLÍTICA DE PRIVACIDADE</a> 
+            </article>
+        </section>
     </footer>
 </body>
 </html>
