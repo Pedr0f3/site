@@ -2,36 +2,16 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name = "description" content = "Seja bem-vindo ao The Winners, uma comunidade com foco em Brawl Stars. Fazemos vídeos, sorteios, eventos e muito mais!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+    <meta name="author" content="The Winner's">
+    <meta name="keywords" content="brawl stars, the winners, black friday, supercell, supercell store, promocao, gemas, moedas, sorteios, max angelical">
     <meta name = "description" content = "Seja bem-vindo ao The Winners, uma comunidade com foco em Brawl Stars. Fazemos vídeos, sorteios, eventos e muito mais!">
     <link rel="stylesheet" href="style.css">
     <title>The Winner's</title>
     <style>
 
-
-
-
-
         .cookieConsentContainer{z-index:999;width:350px;min-height:20px;box-sizing:border-box;padding:30px 30px 30px 30px;background:#232323;overflow:hidden;position:fixed;bottom:30px;right:30px;display:none}.cookieConsentContainer .cookieTitle a{font-family:OpenSans,arial,sans-serif;color:#fff;font-size:22px;line-height:20px;display:block}.cookieConsentContainer .cookieDesc p{margin:0;padding:0;font-family:OpenSans,arial,sans-serif;color:#fff;font-size:13px;line-height:20px;display:block;margin-top:10px}.cookieConsentContainer .cookieDesc a{font-family:OpenSans,arial,sans-serif;color:#fff;text-decoration:underline}.cookieConsentContainer .cookieButton a{display:inline-block;font-family:OpenSans,arial,sans-serif;color:#fff;font-size:14px;font-weight:700;margin-top:14px;background:#000;box-sizing:border-box;padding:15px 24px;text-align:center;transition:background .3s}.cookieConsentContainer .cookieButton a:hover{cursor:pointer;background:#3e9b67}@media (max-width:980px){.cookieConsentContainer{bottom:0!important;left:0!important;width:100%!important}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         #titulo-noticias {
             font-size: 35px;
@@ -43,10 +23,8 @@
         }
 
         #noticias {
-            background-color: white;
             display: inline-block;
             position: relative;
-            border-top: 1px solid black;
         }
 
         #noticias img {
@@ -65,34 +43,10 @@
             padding: 10px;
         }
 
-        #noticias a{
-            text-decoration: none;
-            width: 100%;
+        #container-noticias {
+            background-image: linear-gradient(rgb(255, 255, 255), rgb(187, 253, 255));
+            border-top: 1px solid black;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         #titulo-sorteio {
             font-size: 35px;
@@ -407,6 +361,7 @@
                 <li><a href="sorteios.html">Sorteios</a></li>
                 <li><a href="itensGratis.html">Grátis</a></li>
                 <li><a href="redesSociais.html">Redes</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
             </ul>
         </nav>
             
@@ -435,21 +390,23 @@
 
 
 
-
-        <div class="container" id="noticias">
+        <section id="container-noticias" class="container">
             <h1 id="titulo-noticias">Notícias</h1>
-            <a href="novo-brawler-shade.html" target="_blank">
-                <img src="imagensNoticias/lancamentoShade.jpg" alt="">
-                <h2>Shade ganhou vida: tudo sobre o novo brawler!</h2>
-            </a>
-        </div>
+            <article class="container" id="noticias">
+                <a href="novo-brawler-shade.html" target="_blank">
+                    <img src="imagensNoticias/lancamentoShade.jpg" alt="">
+                    <h2>Shade ganhou vida: tudo sobre o novo brawler!</h2>
+                </a>
+            </article>
+    
+            <article class="container" id="noticias">
+                <a href="black-friday-brawl-stars.html" target="_blank">
+                    <img src="imagensNoticias/decontoBlackFriday.png" alt="">
+                    <h2>💣A MAIOR BLACK FRIDAY DO BRAWL STARS!</h2>
+                </a>
+            </article>
+        </section>
 
-        <div class="container" id="noticias">
-            <a href="black-friday-brawl-stars.html" target="_blank">
-                <img src="imagensNoticias/decontoBlackFriday.png" alt="">
-                <h2>💣A MAIOR BLACK FRIDAY DO BRAWL STARS!</h2>
-            </a>
-        </div>
 
 
 
@@ -472,16 +429,14 @@
 
 
         
-        <div class="container" id="container-1">
+        <section class="container" id="container-1">
             <h1 id="titulo-sorteio">Nossos sorteios</h1>
             <p id="descricao-sorteio">Todo mês realizamos <strong>4 sorteios</strong>, eles acontecem no nosso canal do 
                 <strong>YouTube</strong>, no nosso <strong>Discord</strong> e nos nossos <strong>Clubes do Brawl Stars</strong>!
             </p>
             <div id="container-sorteios">
-
-
                 <div class="container-sorteio-box" onclick="leiaMais()">
-                    <div>
+                    <article>
                         <span class="fechado">
                             <h1>Max Angelical</h1>
                             <p>Plataforma: Vídeo do Youtube</p>
@@ -492,7 +447,7 @@
                             <p>Início: 27/10/2024</p>
                             <p>Término: 06/11/2024</p>
                         </span>
-                    </div>
+                    </article>
                     <div>
                         <img src="imagensSorteios/maxAngelical.png" alt="">
                         <span class="seta"></span>
@@ -501,7 +456,7 @@
 
 
                 <div class="container-sorteio-box" onclick="leiaMais()">
-                    <div>
+                    <article>
                         <span class="fechado">
                             <h1>Max Angelical</h1>
                             <p>Plataforma: Live do YouTube</p>
@@ -512,7 +467,7 @@
                             <p>Início: 16/11/2024</p>
                             <p>termino: 16/11/2024</p>
                         </span>
-                    </div>
+                    </article>
                     <div>
                         <img src="imagensSorteios/maxAngelical.png" alt="">
                         <span class="seta"></span>
@@ -521,7 +476,7 @@
 
 
                 <div class="container-sorteio-box" onclick="leiaMais()">
-                    <div>
+                    <article>
                         <span class="fechado">
                             <h1>Max Angelical</h1>
                             <p>Plataforma: Discord</p>
@@ -532,7 +487,7 @@
                             <p>Início: 27/10/2024</p>
                             <p>termino: 06/11/2024</p>
                         </span>
-                    </div>
+                    </article>
                     <div>
                         <img src="imagensSorteios/maxAngelical.png" alt="">
                         <span class="seta"></span>
@@ -541,58 +496,58 @@
 
                 <a href="sorteios.html" class="verTodos">Ver Todos</a>
             </div>
-        </div>
+        </section>
 
 
 
 
 
-        <div class="container" id="container-2">
+        <section class="container" id="container-2">
             <h1 id="titulo-video">Nossos Vídeos</h1>
             <p id="descricao-video">Nossos vídeos tem o objetivo de <strong>informar</strong>, 
             <strong>ajudar</strong> e <strong>divertir</strong> os jogadores de 
             <strong>Brawl Stars</strong>.</p>
 
             <div id="container-videos">
+                
+                <article class="container-videos-box">
+                    <a href="https://youtu.be/lRvrGSKehUk?si=o7w5UcNi-XlIxmvY" target="_blank">
+                        <img src="imagensVideos/video5.jpg" alt="">
+                        <p>Como <strong>CONSEGUIR PRESTÍGIO</strong>
+                            no <strong>BRAWL STARS</strong>!</p>
+                    </a>
+                </article>
 
-                <div class="container-videos-box">
+                <article class="container-videos-box">
                     <a href="https://youtu.be/oi95wHSJ6-0?si=xS6UNFpz3Ej1KoA3" target="_blank">
                         <img src="imagensVideos/video3.jpg" alt="">
                         <p>Como será o <strong>SHADE</strong> o <strong>NOVO BRAWLER</strong>
                             do <strong>BRAWL STARS</strong>!</p>
                     </a>
-                </div>
+                </article>
 
-                <div class="container-videos-box">
-                    <a href="https://youtu.be/7tFz9qW-VMY" target="_blank">
-                        <img src="imagensVideos/video4.png" alt="">
-                        <p>Como <strong>PEGAR 1000 TROFÉUS</strong> com <strong>QUALQUER BRAWLER</strong> 
-                            no <strong>BRAWL STARS</strong>!</p>
-                    </a>
-                </div>
-
-                <div class="container-videos-box">
+                <article class="container-videos-box">
                     <a href="https://youtu.be/11hnz0JRZVI?si=E7WBu87Nu29JArP6" target="_blank">
                         <img src="imagensVideos/video1.png" alt="">
                         <p>Como <strong>DAR</strong> o <strong>BRAWL PASS</strong> de
                             presente no <strong>BRAWL STARS</strong>!</p>
                     </a>
-                </div>
+                </article>
 
-                <div class="container-videos-box">
+                <article class="container-videos-box">
                     <a href="https://youtu.be/QwcPwRTGQw8?si=GPREPpSrqr_35Mj3" target="_blank">
                         <img src="imagensVideos/video2.jpg" alt="">
                         <p>Como <strong>TROCAR</strong> de <strong>EMAIL</strong> 
                             no <strong>BRAWL STARS</strong>!</p>
                     </a>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
 
 
 
-        <div class="container" id="container-3">
+        <section class="container" id="container-3">
             <h1 id="titulo-membro">Seja membro</h1>
             <p id="descricao-membro">Torne-se <strong>membro</strong> do nosso canal do 
             <strong>YouTube</strong> e concorra a um <strong>BRAWL PASS PLUS</strong> todo 
@@ -600,17 +555,17 @@
             fazer parte basta ir ao nosso canal e aderir ao plano que custa apenas <strong>R$1,99/mês</strong>.</p>
 
             <a href="https://www.youtube.com/channel/UCOwzHp-dc2ab8dJ3-UeRUeQ/join" target="_blank" id="link-membro"> Clique aqui para saber mais</a>
-        </div>
+        </section>
 
 
 
-        <div class="container" id="container-4">
+        <section class="container" id="container-4">
             <h1 id="titulo-gratis">Itens grátis</h1>
             <p id="descricao-gratis">Links para <strong>itens grátis</strong> dentro do jogo, como ícones de perfil, 
             reações e sprays.</p>
 
             <div id="container-gratis">
-                <div class="container-gratis-box">
+                <article class="container-gratis-box">
                     <div>
                         <h1>Ícone do Spike</h1>
                         <p>Link: <a href="https://link.brawlstars.com/pt/action=voucher&code=ab9cf7c2-45f8-4012-ad38-dfe8b1747c3b" target="_blank">Clique aqui</a></p>
@@ -619,9 +574,9 @@
                     <div>
                         <img src="imagensItensGratis/iconeSpike.png" alt="">
                     </div>
-                </div>
+                </article>
 
-                <div class="container-gratis-box">
+                <article class="container-gratis-box">
                     <div>
                         <h1>Reação de Palhaço</h1>
                         <p>Link: <a href="https://link.brawlstars.com/pt/?action=voucher&code=b647c71d-41a5-42c4-a10f-8d47952d82f3" target="_blank">Clique aqui</a></p>
@@ -630,9 +585,9 @@
                     <div>
                         <img src="imagensItensGratis/reacaoPalhaco.png" alt="">
                     </div>
-                </div>
+                </article>
 
-                <div class="container-gratis-box">
+                <article class="container-gratis-box">
                     <div>
                         <h1>Reação do Rosto Sujo</h1>
                         <p>Link: <a href="https://link.brawlstars.com/pt/?action=voucher&code=315b3e4f-0fd5-4a31-a5b0-86806f7638fc" target="_blank">Clique aqui</a></p>
@@ -641,39 +596,40 @@
                     <div>
                         <img src="imagensItensGratis/iconeCaraPintada.png" alt="" id="caraPintada">
                     </div>
-                </div>
+                </article>
 
                 <a href="itensGratis.html" class="verTodos">Ver Todos</a>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <div class="container-final">
-            <div class="container-final1">
-                <h1 class="titulo-final">Nossas redes sociais</h1>
-                <div class="redes-sociais">
-                    <a href="https://www.instagram.com/thewinners_23/"><img src="imagensRedesSociais/redeInstagram.png" alt="" class="link"></a>
-                    <a href="https://www.youtube.com/@the_winners23" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="" class="link"></a>
-                    <a href="https://discord.gg/K28fDYbXun" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="" class="link"></a>
-                    <a href="https://www.tiktok.com/@casal_winner?_t=8rhafQelrYV&_r=1"><img src="https://img.icons8.com/?size=512&id=118640&format=png" alt="" class="link"></a>
+        <section>
+            <article class="container-final">
+                <div class="container-final1">
+                    <h2 class="titulo-final">Nossas redes sociais</h2>
+                    <div class="redes-sociais">
+                        <a href="https://www.instagram.com/thewinners_23/"><img src="\imagensRedesSociais/redeInstagram.png" alt="instagram" class="link"></a>
+                        <a href="https://www.youtube.com/@the_winners23" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="youtube" class="link"></a>
+                        <a href="https://discord.gg/K28fDYbXun" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="discord" class="link"></a>
+                        <a href="https://www.tiktok.com/@casal_winner?_t=8rhafQelrYV&_r=1"><img src="https://img.icons8.com/?size=512&id=118640&format=png" alt="tiktok" class="link"></a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="horarios">
-                <h1>Horários:</h1>
-                <p>Shorts - Todo dia</p>
-                <p>Lives - Ocasionalmente</p>
-                <p>Vídeos - Todo domingo</p>
-            </div>
-        </div>
+                
+                <div class="horarios">
+                    <h2>Horários</h2>
+                    <p>Shorts - Todo dia</p>
+                    <p>Lives - Ocasionalmente</p>
+                    <p>Vídeos - Todo domingo</p>
+                </div>
+            </article>
 
-        <div class="container-regras">
-            <a href="contato.html">CONTATO</a>
-            <a href="sobre.html">SOBRE</a>
-            <a href="politicaPrivacidade.html">POLÍTICA DE PRIVACIDADE</a> 
-        </div>
-
+            <article class="container-regras">
+                <a href="/contato.html">CONTATO</a>
+                <a href="/sobre.html">SOBRE</a>
+                <a href="/politicaPrivacidade.html">POLÍTICA DE PRIVACIDADE</a> 
+            </article>
+        </section>
     </footer>
 
     <script>
