@@ -22,30 +22,61 @@
             margin-bottom: 20px;
         }
 
-        #noticias {
+        .noticias {
             display: inline-block;
             position: relative;
+            margin: 5px;
+            overflow: hidden;
         }
 
-        #noticias img {
-            width: 100%;
-            border: 2px solid black;
+        .noticias img {
+            border: 1px solid black;
+            max-width: 100%;
+            -moz-transition: all .3s;
+            -webkit-transition: all .3s;
+            transition: all .3s;
         }
 
-        #noticias h2 {
+        .noticias:hover img {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .noticias h2 {
             color: white;
             position: absolute;
-            bottom: 30px;
-            left: 30px;
+            bottom: 20px;
+            left: 20px;
             font-size: 30px;
             background-color: #00000091;
-            width: 80%;
+            width: 85%;
             padding: 10px;
         }
 
         #container-noticias {
             background-image: linear-gradient(rgb(255, 255, 255), rgb(187, 253, 255));
             border-top: 1px solid black;
+        }
+
+        #btn-not {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            text-decoration: none;
+            color: #2b2b2b;
+            background-color: #ffffffc4;
+            padding: 15px;
+            font-weight: 700;
+            border-radius: 10px;
+            margin-top: 10px;
+            outline: 1px solid black;
+            transition: background-color 1s ease, width .3s ease;
+        }
+
+        #btn-not:hover {
+            background-color: #ffffff;
+            width: 85%;
         }
 
         #titulo-sorteio {
@@ -373,6 +404,7 @@
                 <li><a href="sorteios.html">Sorteios</a></li>
                 <li><a href="itensGratis.html">Grátis</a></li>
                 <li><a href="redesSociais.html">Redes</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
             </ul>
         </aside>
             
@@ -403,19 +435,21 @@
 
         <section id="container-noticias" class="container">
             <h1 id="titulo-noticias">Notícias</h1>
-            <article class="container" id="noticias">
-                <a href="novo-brawler-shade.html" target="_blank">
+            <article class="noticias">
+                <a href="novo-brawler-shade.html" target="_blank" class="zoom">
                     <img src="imagensNoticias/lancamentoShade.jpg" alt="">
                     <h2>Shade ganhou vida: tudo sobre o novo brawler!</h2>
                 </a>
             </article>
     
-            <article class="container" id="noticias">
-                <a href="black-friday-brawl-stars.html" target="_blank">
+            <article class="noticias">
+                <a href="black-friday-brawl-stars.html" target="_blank" class="zoom">
                     <img src="imagensNoticias/decontoBlackFriday.png" alt="">
                     <h2>💣A MAIOR BLACK FRIDAY DO BRAWL STARS!</h2>
                 </a>
             </article>
+
+            <a href="noticias.html" id="btn-not">Ver Todos</a>
         </section>
 
 
