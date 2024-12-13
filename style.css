@@ -26,7 +26,7 @@ main {
 
 header {
     max-width: 1030px;
-    min-width: 390px;
+    min-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@ header {
     list-style: none;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(231, 250, 255));
     padding: 0;
-    min-width: 390px;
+    min-width: 300px;
     max-width: 1040px;
     margin: auto;
     display: flex;
@@ -132,7 +132,7 @@ header {
 }
 
 .container {
-    min-width: 350px;
+    min-width: 300px;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
@@ -162,7 +162,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-width: 390px;
+    min-width: 300px;
     max-width: 640px;
     margin: auto;
 }
@@ -179,7 +179,7 @@ footer {
 }
 
 .container-regras {
-    min-width: 390px;
+    min-width: 300px;
     max-width: 400px;
     text-align: center;
     margin: auto;
