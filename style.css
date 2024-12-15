@@ -37,8 +37,13 @@ header {
     border-bottom: 1px solid black;
 }
 
+header img:first-child{
+    width: 70%;
+    max-width: 350px;
+}
+
 .creators {
-    width: 30px;
+    width: 40px;
     margin-left: 10px;
 }
 
