@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "description" content = "Presentes de Natal grátis no Brawl Stars!">
+    <meta name="author" content="The Winner's">
+    <meta name="keywords" content="brawl stars, the winners, supercell, gemas, moedas, nova tmporada, presentes, presentes gratis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="\icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="\style.css">
+    <title>Presentes Grátis no Brawl Stars</title>
+    
+    <style>
+
+        #conteudo {
+            background-color: white;
+            border-top: 1px solid black;
+        }
+
+        #imagem {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        #descricao-imagem {
+            font-size: 13px;
+            color: #4a4a4a;
+            text-align: center;
+        }
+
+        #categoria {
+            width: 70px;
+            background-color: rgb(204, 253, 255);
+            text-align: center;
+            font-size: 13px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            padding: 5px;
+            outline: 1px solid black;
+            font-weight: 600;
+        }
+
+        #titulo-conteudo {
+            font-size: 35px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            line-height: 1.3;
+            color: #2d2d2d;
+        }
+
+        #descricao-titulo-conteudo {
+            color: #2d2d2d;
+            margin-bottom: 20px;
+        }
+
+        #container-autor {
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        #autor-img {
+            width: 25px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        #autor-descricao {
+            color: #4a4a4a;
+        }
+
+        #insta {
+            width: 25px;
+        }
+
+        #YouTube {
+            width: 25px;
+        }
+
+        #tik {
+            width: 25px;
+        }
+
+        #disc {
+            width: 25px;
+        }
+
+        #container-redes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        #container-redes p {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        #container-redes a {
+            margin: 5px;
+        }
+
+
+        #container-materia {
+            max-width: 1000px;
+            min-width: 360px;
+        }
+
+        #btn {
+            display: block;
+            text-decoration: none;
+            color: #2d2d2d;
+            background-color: aquamarine;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            width: 150px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #btn:hover {
+            width: 160px;
+        }
+
+        .titulo-materia {
+            font-size: 30px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            line-height: 1.3;
+            color: #2d2d2d;
+            margin-top: 30px;
+        }
+
+        .descricao-materia {
+            color: #2d2d2d;
+            font-size: 18px;
+            line-height: 1.4;
+            margin: 5px;
+            margin-top: 20px;
+        }
+
+        #imagem2 {
+            width: 100%;
+            margin-top: 20px;
+            border: 2px solid black;
+        }
+
+        #lista-materia {
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        #lista-materia li {
+            margin-left: 20px;
+            margin-top: 8px;
+            font-size: 18px;
+        }
+
+        #container-skins {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+
+        #container-skins img {
+           width: 15%;
+        }
+
+        #container-skins2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+
+        #container-skins2 img {
+            width: 15%;
+        }
+
+        #tabela-skins{
+            border-collapse: collapse;
+            text-align: left;
+            width: 80%;
+            margin: auto;
+            border: 1px solid rgba(0, 0, 0, 0.304);
+            margin-top: 20px;
+        }
+
+        #tabela-skins td, th {
+            padding: 7px;
+        }
+
+        #tabela-cinza {
+            background-color: #eeeeeeac;
+        }
+
+        #btn-not {
+            width: 95%;
+            margin: auto;
+            text-align: center;
+            text-decoration: none;
+            color: #2b2b2b;
+            background-color: #ffffffc4;
+            padding: 15px;
+            font-weight: 700;
+            border-radius: 10px;
+            margin-top: 10px;
+            outline: 1px solid black;
+            margin: auto;
+            transition: background-color 1s ease, width .3s ease;
+        }
+
+        #div-qr {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #qr {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="\banner.jpg" alt="banner">
+            <img src="https://creators.supercell.com/img/creators-logo-badge.322e15ce.svg" alt="logo" class="creators">
+        </header>
+
+        <nav class="menu-h">
+            <ul>
+                <li>
+                    <button id="menuToggle" class="menu-button">☰</button>
+                </li>
+                <li><a href="index">Início</a></li>
+                <li><a href="sorteios">Sorteios</a></li>
+                <li><a href="itensGratis">Grátis</a></li>
+                <li><a href="redesSociais">Redes</a></li>
+            </ul>
+        </nav>
+
+        <aside id="sideMenu" class="side-menu">
+            <ul>
+                <li><a href="index">Início</a></li>
+                <li><a href="sorteios">Sorteios</a></li>
+                <li><a href="itensGratis">Grátis</a></li>
+                <li><a href="redesSociais">Redes</a></li>
+                <li><a href="noticias">Notícias</a></li>
+            </ul>
+        </aside>
+
+
+        <section class="container" id="conteudo">
+            <article> 
+                <p id="categoria">NOTÍCIAS</p>
+                <h1 id="titulo-conteudo">PRESENTES GRÁTIS NO BRAWL STARS</h1>
+                <p id="descricao-titulo-conteudo">🌟 Para alegrar a comunidades dias antes das festas de Natal, a Supercell fez a boa e liberou 3 presentes grátis pra todo mundo resgatar!</p>
+                <img src="/imagensNoticias/presents.avif" alt="Tela de Carregamento do Starr Toon 2.0" id="imagem">
+                <p id="descricao-imagem">Ao infinito... e além!</p>
+            </article>
+
+
+            <div id="container-autor">
+                <img src="\icone.ico" alt="icone" id="autor-img">
+                <p id="autor-descricao">Por <strong>The Winner's</strong>&nbsp&nbsp-&nbsp&nbspAtualizado&nbsp<strong>19 dez, 2024</strong></p>
+            </div>
+
+            <div id="container-redes">
+                <p>Nos Siga: </p>
+                <a href="https://www.tiktok.com/@casal_winner?_t=8rhafQelrYV&_r=1" target="_blank" id="atik"><img src="/imagensRedesSociais/redeTikTok1.png" alt="" id="tik"></a>
+                <a href="https://www.instagram.com/thewinners_23/" target="_blank" id="ainsta"><img src="/imagensRedesSociais/redeInstagram.png" alt="" id="insta"></a>
+                <a href="https://discord.gg/K28fDYbXun" target="_blank" id="adisc"><img src="/imagensRedesSociais/redeDiscord.png" alt="" id="disc"></a>
+                <a href="https://www.youtube.com/@the_winners23" target="_blank" id="aYouTube"><img src="/imagensRedesSociais/redeYouTube.png" alt="" id="YouTube"></a>
+            </div>
+
+            <section id="container-materia">
+                <h2 class="titulo-materia">O que são esses presentes?</h2>
+                <p class="descricao-materia">Com a chegada do natal, a Supercell adicionou no jogo um novo tipo de recompensa, os Presentes! Eles inicialmente só poderiam ser adquiridos através do caminho de recompensas na loja do jogo, e por meio do evento de clube, a Mega Árvore.</p>
+                <p class="descricao-materia">Porém como a comunidade sofreu com a chegada do novo brawler temporário Buzz Lightyear, e com o objetivo de dar um gás na reta final do evento do clube, a Supercell fez a boa e decidiu liberar 3 presentes grátis para todo mundo.</p>
+
+                <h2 class="titulo-materia">O que pode vir nos presentes?</h2>
+                <p class="descricao-materia">A Supercell não economizou esse ano e deixou os presentes bem recheados, neles podemos conseguir moedas, gemas, blings, duplicadores, vales, pontos de poder, acessórios, poderes de estrela, reações, sprays, ícones de jogador e skins!</p>
+                <p class="descricao-materia"><strong>Chance de ganhar as skins Raras:</strong></p>
+                <table id="tabela-skins">
+                    <thead>
+                      <tr>
+                        <th>Skin</th>
+                        <th>Chances nos Presentes Épicos</th>
+                        <th>Chances nos Presentes Míticos</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="tabela-cinza">
+                        <td>Pop-Up Darryl</td>
+                        <td>0.63%</td>
+                        <td>2.81%</td>
+                      </tr>
+                      <tr>
+                        <td>Doll Jessie</td>
+                        <td>0.63%</td>
+                        <td>2.81%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Sam The Teddy</td>
+                        <td>0.63%</td>
+                        <td>2.81%</td>
+                      </tr>
+                      <tr>
+                        <td>8-Bit Classic</td>
+                        <td>0.63%</td>
+                        <td>2.81%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Retro Nani</td>
+                        <td>0.63%</td>
+                        <td>2.81%</td>
+                      </tr>
+                      <tr>
+                        <td>Larry & Lawrie Controllers</td>
+                        <td>0.63%</td>
+                        <td>2.81%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Bubblegum Bibi</td>
+                        <td>0.63%</td>
+                        <td>2.81%</td>
+                      </tr>
+                      <tr>
+                        <td>Unicorn Bonnie</td>
+                        <td>0.63%</td>
+                        <td>2.81%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p class="descricao-materia"><strong>Chance de ganhar as skins Super Raras:</strong></p>
+
+                  <table id="tabela-skins">
+                    <thead>
+                      <tr>
+                        <th>Skin</th>
+                        <th>Chances nos Presentes Épicos</th>
+                        <th>Chances nos Presentes Míticos</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="tabela-cinza">
+                        <td>Cuddly Kit</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr>
+                        <td>Sugar Bomb Mike</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr id="tabela-cinza" >
+                        <td>Gummybear Nita</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr>
+                        <td>Krampus Ash</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Snowman Tick</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr>
+                        <td>Gift Express Jacky</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Ho Ho Ho Bo</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr>
+                        <td>Logmas Spike</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>DIY Surge</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                      <tr>
+                        <td>Potato Squeak</td>
+                        <td>0.50%</td>
+                        <td>2.25%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p class="descricao-materia"><strong>Chance de ganhar as skins Épicas:</strong></p>
+
+
+                  <table id="tabela-skins">
+                    <thead>
+                      <tr>
+                        <th>Skin</th>
+                        <th>Chances nos Presentes Míticos</th>
+                        <th>Chances nos Presentes Lendários</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="tabela-cinza">
+                        <td>Loopy Lola</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr>
+                        <td>Red Nose Nita</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Cupcake Darryl</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr>
+                        <td>Piñata Ash</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Buzzette</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr>
+                        <td>Grouch Mico</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Yeti Sam</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr>
+                        <td>Santa Stu</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Nutcracker Gale</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                      <tr>
+                        <td>Holiday Party Frank</td>
+                        <td>0.38%</td>
+                        <td>3.85%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p class="descricao-materia"><strong>Chance de ganhar as skins Míticas:</strong></p>
+
+
+                  <table  id="tabela-skins">
+                    <thead>
+                      <tr id="tabela-cinza">
+                        <th>Skin</th>
+                        <th>Chances nos Presentes Lendários</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Pop Penny</td>
+                        <td>1.00%</td>
+                      </tr>
+                      <tr id="tabela-cinza">
+                        <td>Frost Queen Amber</td>
+                        <td>1.00%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  
+                  
+                <p class="descricao-materia">Todas as skins ficarão disponíveis durante a temporada.</p>
+
+                <h2 class="titulo-materia">Presentes Grátis:</h2>
+                <p class="descricao-materia">Há duas formas de resgatar os presentes grátis, através do link disponibilizado abaixo, ou através do Qr Code:</p>
+                
+                <a href="https://link.brawlstars.com/?action=voucher&code=25b816b7-4906-4a98-ac5b-562407940a6b" id="btn-not" class="container" target="_blank">CLIQUE AQUI E RESGATE</a>
+                
+                <div id="div-qr">
+                    <p class="descricao-materia"><strong>Qr Code:</strong></p>
+                    <img src="imagensNoticias/qrCodePresentes.png" alt="" id="qr">
+                </div>
+                
+                
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <article class="container-final">
+                <div class="container-final1">
+                    <h2 class="titulo-final">Nossas redes sociais</h2>
+                    <div class="redes-sociais">
+                        <a href="https://www.instagram.com/thewinners_23/"><img src="\imagensRedesSociais/redeInstagram.png" alt="instagram" class="link"></a>
+                        <a href="https://www.youtube.com/@the_winners23" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="youtube" class="link"></a>
+                        <a href="https://discord.gg/K28fDYbXun" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="discord" class="link"></a>
+                        <a href="https://www.tiktok.com/@casal_winner?_t=8rhafQelrYV&_r=1"><img src="https://img.icons8.com/?size=512&id=118640&format=png" alt="tiktok" class="link"></a>
+                    </div>
+                </div>
+                
+                <div class="horarios">
+                    <h2>Horários</h2>
+                    <p>Shorts - Todo dia</p>
+                    <p>Lives - Ocasionalmente</p>
+                    <p>Vídeos - Todo domingo</p>
+                </div>
+            </article>
+
+            <article class="container-regras">
+                <a href="/contato">CONTATO</a>
+                <a href="/sobre">SOBRE</a>
+                <a href="/politicaPrivacidade">POLÍTICA DE PRIVACIDADE</a> 
+            </article>
+        </section>
+    </footer>
+
+    <script>
+        function leiaMais() {
+            var container = event.currentTarget; // A div que foi clicada
+            container.classList.toggle('expandido'); // Alterna a classe para ativar a animação
+        }
+
+
+        const menuToggle = document.getElementById("menuToggle");
+        const sideMenu = document.getElementById("sideMenu");
+        
+        // Abrir ou fechar o menu
+        menuToggle.addEventListener("click", () => {
+            sideMenu.classList.toggle("open");
+        });
+        
+        // Fechar o menu ao clicar fora
+        document.addEventListener("click", (event) => {
+            if (!sideMenu.contains(event.target) && event.target !== menuToggle) {
+                sideMenu.classList.remove("open");
+            }
+        });
+    </script>
+</body>
+</html>
