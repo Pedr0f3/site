@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "description" content = "Sorteio do PharaOllie">
+    <meta name="author" content="The Winner's">
+    <meta name="keywords" content="brawl stars, the winners, shade, supercell, novo brawler, pop penny, sorteio, brawl talk, #PopPennyGiveaway, pharaollie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="\icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="\style.css">
+    <title>Sorteio da Pop Penny</title>
+    
+    <style>
+
+        #conteudo {
+            background-color: white;
+            border-top: 1px solid black;
+        }
+
+        #imagem {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        #descricao-imagem {
+            font-size: 13px;
+            color: #4a4a4a;
+            text-align: center;
+        }
+
+        #categoria {
+            width: 70px;
+            background-color: rgb(204, 253, 255);
+            text-align: center;
+            font-size: 13px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            padding: 5px;
+            outline: 1px solid black;
+            font-weight: 600;
+        }
+
+        #titulo-conteudo {
+            font-size: 35px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            line-height: 1.3;
+            color: #2d2d2d;
+        }
+
+        #descricao-titulo-conteudo {
+            color: #2d2d2d;
+            margin-bottom: 20px;
+        }
+
+        #container-autor {
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        #autor-img {
+            width: 25px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        #autor-descricao {
+            color: #4a4a4a;
+        }
+
+        #insta {
+            width: 25px;
+        }
+
+        #YouTube {
+            width: 25px;
+        }
+
+        #tik {
+            width: 25px;
+        }
+
+        #disc {
+            width: 25px;
+        }
+
+        #container-redes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        #container-redes p {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        #container-redes a {
+            margin: 5px;
+        }
+
+
+        #container-materia {
+            max-width: 1000px;
+            min-width: 360px;
+        }
+
+        .titulo-materia {
+            font-size: 30px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            line-height: 1.3;
+            color: #2d2d2d;
+            margin-top: 30px;
+        }
+
+        .descricao-materia {
+            color: #2d2d2d;
+            font-size: 18px;
+            margin-top: 25px;
+            line-height: 1.4;
+            margin: 5px;
+        }
+
+        #imagem2 {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #lista-materia {
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+
+        #lista-materia li {
+            margin-left: 20px;
+            margin-top: 8px;
+            font-size: 18px;
+        }
+
+
+
+        #titulo-video {
+            font-size: 25px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            line-height: 1.3;
+            color: #2d2d2d;
+        }
+
+        #descricao-video {
+            font-family: 'Poppins';
+            font-size: 14px;
+            line-height: 1.6;
+            color: #4a4a4a;
+        }
+
+        #container-videos {
+            border-radius: 25px;
+            outline: 1px solid black;
+            font-family: 'Poppins';
+        }
+
+        .container-videos-box {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            transition: margin .5s ease;
+        }
+
+        .container-videos-box a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+            text-decoration: none;
+            color: #2b2b2b;
+        }
+
+        .container-videos-box:hover {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .container-videos-box img {
+            width: 180px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .container-videos-box a p {
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        #container-redesSociais {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-redesSociais-box {
+            background-color: rgba(255, 255, 255, 0.696);
+            padding: 10px;
+            border-radius: 10px;
+            outline: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            transition: background-color 1s ease-out, outline 1s ease-out, margin .3s ease;
+        }
+
+        .container-redesSociais-box:hover {
+            background-color: #ffffff;
+            outline: 1px solid black;
+            margin-left: 5px;
+            margin-right: 5px;
+
+        }
+
+        .container-redesSociais-box img {
+            width: 110px;
+            margin-right: 25px;
+        }
+
+        .container-redesSociais-box h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        #discord {
+            width: 80px;
+        }
+
+        #link2 {
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="\banner.jpg" alt="">
+        </header>
+
+        <nav class="menu-h">
+            <ul>
+                <li>
+                    <button id="menuToggle" class="menu-button">☰</button>
+                </li>
+                <li><a href="index">Início</a></li>
+                <li><a href="sorteios">Sorteios</a></li>
+                <li><a href="itensGratis">Grátis</a></li>
+                <li><a href="redesSociais">Redes</a></li>
+            </ul>
+        </nav>
+
+        <aside id="sideMenu" class="side-menu">
+            <ul>
+                <li><a href="index">Início</a></li>
+                <li><a href="sorteios">Sorteios</a></li>
+                <li><a href="itensGratis">Grátis</a></li>
+                <li><a href="redesSociais">Redes</a></li>
+                <li><a href="noticias">Notícias</a></li>
+            </ul>
+        </aside>
+
+        <section class="container" id="conteudo">
+            <article>
+                <p id="categoria">NOTÍCIAS</p>
+                <h1 id="titulo-conteudo">Sorteio do PharaOllie</h1>
+                <p id="descricao-titulo-conteudo">
+                    Aqui você encontrará todos os nossos sorteios relacionados à Skin do PharaOllie lançada no novo Brawl Talk!    
+                </p>
+                <img src="\imagensNoticias/ThumbPharaOllie.jpg" alt="" id="imagem">
+                <p id="descricao-imagem">Sorteio do PharaOllie</p>
+            </article>
+
+
+            <div id="container-autor">
+                <img src="\icone.ico" alt="" id="autor-img">
+                <p id="autor-descricao">Por <strong>The Winner's</strong>&nbsp&nbsp-&nbsp&nbspAtualizado&nbsp<strong>23 fev, 2025</strong></p>
+            </div>
+
+            <div id="container-redes">
+                <p>Nos Siga: </p>
+                <a href="https://www.tiktok.com/@casal_winner?_t=8rhafQelrYV&_r=1" target="_blank" id="atik"><img src="/imagensRedesSociais/redeTikTok1.png" alt="" id="tik"></a>
+                <a href="https://www.instagram.com/thewinners_23/" target="_blank" id="ainsta"><img src="/imagensRedesSociais/redeInstagram.png" alt="" id="insta"></a>
+                <a href="https://discord.gg/K28fDYbXun" target="_blank" id="adisc"><img src="/imagensRedesSociais/redeDiscord.png" alt="" id="disc"></a>
+                <a href="https://www.youtube.com/@the_winners23" target="_blank" id="aYouTube"><img src="/imagensRedesSociais/redeYouTube.png" alt="" id="YouTube"></a>
+            </div>
+                
+
+
+            <section id="container-materia">
+                <p class="">Devido ao Brawl Talk todos os criadores de conteúdo receberão algumas skins para sortear, no caso a skin do PharaOllie. Ao todo, nós faremos 4 sorteios, sendo 3 destinados ás nossas redes sociais, e 1 reservada para nosso clube.</p>
+                <h2 class="titulo-materia">Sorteio do Youtube</h2>
+                <p class="descricao-materia">Para participar do Sorteio do PharaOllie referente ao nosso canal do YouTube, você deve entrar no vídeo que fizemos e cumprir as seguintes etapas:</p>
+                
+                <ul id="lista-materia">
+                    <li>Hypar nosso vídeo;</li>
+                    <li>Curtir o vídeo;</li>
+                    <li>Se inscrever no canal;</li>
+                    <li>Deixar o seu <strong>#PharaOllie</strong> nos comentários.</li>
+                </ul>
+
+                <p class="descricao-materia">Apenas cumprindo todas as etapas citadas acima você estará apto a participar do sorteio.</p>
+                <p class="descricao-materia" id="link2">Link para o vídeo:</p>
+
+
+                <section id="container-2">
+                    <div id="container-videos">
+                        <article class="container-videos-box">
+                            <a href="https://youtu.be/JWGJJS66E5A?si=yCjyP1NjdzCearrh" target="_blank">
+                                <img src="imagensNoticias/ThumbPharaOllie.jpg" alt="">
+                                <p>Sorteio do <strong>PharaOllie</strong> no BRAWL STARS!</p>
+                            </a>
+                        </article>
+                    </div>
+                </section>
+
+
+                <p class="descricao-materia"><strong>Data de Encerramento: 08/02</strong>.</p>
+                
+                <h2 class="titulo-materia">Sorteio do Discord</h2>
+                <p class="descricao-materia">Para participar do nosso sorteio do Discord, você deverá entrar no nosso servidor do Discord (<a href="https://discord.gg/8AasU7ZNWe">link aqui</a>), lá vc deverá ir ao chat de <strong>Eventos</strong> e cumprir o seguinte requisito: </p>
+
+                <ul id="lista-materia">
+                    <li>Estar no servidor a pelo menos 10 minutos;</li>
+                    <li>Ter pelo menos 300 mensagens enviadas na semana.</li>
+                </ul>
+
+                <p class="descricao-materia">Apenas cumprindo todas as etpas citadas acima você estará apto a participar do sorteio.</p>
+
+                <p class="descricao-materia" id="link2">Link para entrar no nosso discord:</p>
+
+
+                <div class="container-redesSociais-box">
+                    <div>
+                        <h1>Discord</h1>
+                        <p>Entre: <a href="https://discord.gg/K28fDYbXun" target="_blank">Clique aqui</a></p>
+                    </div>
+                    <div>
+                        <img src="imagensRedesSociais/redeDiscord.png" alt="" id="discord">
+                    </div>
+                </div>
+
+
+                <p class="descricao-materia">Data de Encerramento: 08/02.</p>
+
+                <h2 class="titulo-materia">Live no YouTube</h2>
+                <p class="descricao-materia">Faremos uma <strong>live</strong> no nosso canal no YouTube dia <strong>07/12 pela manhã</strong>, nessa live estupularemos uma meta de curtidas, e assim que essa meta for atingida soltaremos o link da skin no chat da live! </p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <article class="container-final">
+                <div class="container-final1">
+                    <h2 class="titulo-final">Nossas redes sociais</h2>
+                    <div class="redes-sociais">
+                        <a href="https://www.instagram.com/thewinners_23/"><img src="\imagensRedesSociais/redeInstagram.png" alt="instagram" class="link"></a>
+                        <a href="https://www.youtube.com/@the_winners23" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="youtube" class="link"></a>
+                        <a href="https://discord.gg/K28fDYbXun" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="discord" class="link"></a>
+                        <a href="https://www.tiktok.com/@casal_winner?_t=8rhafQelrYV&_r=1"><img src="https://img.icons8.com/?size=512&id=118640&format=png" alt="tiktok" class="link"></a>
+                    </div>
+                </div>
+                
+                <div class="horarios">
+                    <h2>Horários</h2>
+                    <p>Shorts - Todo dia</p>
+                    <p>Lives - Ocasionalmente</p>
+                    <p>Vídeos - Todo domingo</p>
+                </div>
+            </article>
+
+            <article class="container-regras">
+                <a href="/contato">CONTATO</a>
+                <a href="/sobre">SOBRE</a>
+                <a href="/politicaPrivacidade">POLÍTICA DE PRIVACIDADE</a> 
+            </article>
+        </section>
+    </footer>
+
+    <script>
+        function leiaMais() {
+            var container = event.currentTarget; // A div que foi clicada
+            container.classList.toggle('expandido'); // Alterna a classe para ativar a animação
+        }
+
+        const menuToggle = document.getElementById("menuToggle");
+        const sideMenu = document.getElementById("sideMenu");
+        
+        // Abrir ou fechar o menu
+        menuToggle.addEventListener("click", () => {
+            sideMenu.classList.toggle("open");
+        });
+        
+        // Fechar o menu ao clicar fora
+        document.addEventListener("click", (event) => {
+            if (!sideMenu.contains(event.target) && event.target !== menuToggle) {
+                sideMenu.classList.remove("open");
+            }
+        });
+    </script>
+</body>
+</html>
